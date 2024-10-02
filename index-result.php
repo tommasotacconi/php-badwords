@@ -1,7 +1,9 @@
 <?php
   // Recupero le due variabili inserite dall'utente
-  $parsedText = $_GET['input_text'];
-  $censoredWords = $_GET['censored']
+  $inputText = $_GET['input_text'];
+  $censoredWords = $_GET['censored'];
+  $parsedText = str_ireplace($censoredWords, '***', $inputText);
+  $parsedTextLength = strlen($parsedText);
 ?>
 
 <!DOCTYPE html>
@@ -22,16 +24,17 @@
         <h1>Text editor</h1>
 
         <!-- form -->
-        <section for="parsed-text" class="parsed-text">
+        <section for="input-text" class="input-text">
           <h2>Testo in ingresso</h2>
           <p>
-            Il tuo testo: "<?php echo $parsedText ?>"
+            Il tuo testo: "<?php echo $inputText ?>"
           </p>
-          <p>Hai inserito un testo di <?php echo strlen($parsedText)?> caratteri</p>
+          <p>Hai inserito un testo di <?php echo strlen($inputText)?> caratteri.</p>
         </section>
         <section class="censored-box">
           <h2>Testo risultante</h2>
-        <p>Il testo con le censure ha una lunghezza di <?php ?> caratteri</p>
+          <p>"<?php echo $parsedText; ?>"</p>
+          <p>Il testo con le censure ha una lunghezza di <?php echo $parsedTextLength ?> caratteri.</p>
         </section>
       </div>
     </main>
