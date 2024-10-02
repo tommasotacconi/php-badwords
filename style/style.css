@@ -1,0 +1,62 @@
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid lightcoral;
+  padding: 30px;
+}
+
+label {
+  padding: 0 30px;
+}
+
+label.parsed-text {
+  flex-basis: 60%;
+}
+
+label.censored-words {
+  display: flex;
+  align-items: start;
+}
+
+input,
+textarea {
+  margin-top: 10px;
+  outline: 3px solid transparent;
+  border-radius: 2px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid #de5567;
+  border-radius: 2px;
+  border-color: transparent;
+}
+/* Utilities */
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
