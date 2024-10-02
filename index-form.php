@@ -16,15 +16,21 @@
         <h1>Text editor</h1>
 
         <!-- form -->
-        <form>
-          <label for="parsed-text" class="parsed-text">
-            Insert here your text:
-            <textarea name="parsed_text" id="parsed-text" name="censored_words"></textarea>
-          </label>
-          <label class="censored-box">
-            Insert the words you want to remove separated by spaces:
-            <input type="text" id="censored" name="censored">
-          </label>
+        <form action="./index-result.php">
+          <div class="input-wrapper">
+            <label for="parsed-text" class="input-text">
+              Insert here your text:
+              <textarea name="input_text" id="input-text" name="censored_words"></textarea>
+            </label>
+            <label class="censored-box">
+              Insert the words you want to remove separated by spaces:
+              <input type="text" id="censored" name="censored">
+            </label>
+          </div>
+          <div class="button-wrapper">
+            <button class="btn-sub">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
         </form>
       </div>
     </main>
