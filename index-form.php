@@ -23,7 +23,7 @@
           </label>
           <label class="censored-box">
             Insert the words you want to remove separated by spaces:
-            <input type="text" id="censored" name="censoered">
+            <input type="text" id="censored" name="censored">
           </label>
         </form>
       </div>
