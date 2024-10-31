@@ -1,8 +1,8 @@
 <?php
   // Recupero le due variabili inserite dall'utente
   $inputText = $_GET['input_text'];
-  $censoredWords = $_GET['censored'];
-  $parsedText = str_ireplace($censoredWords, '***', $inputText);
+  $censoredWord = $_GET['censored-word'];
+  $parsedText = str_ireplace($censoredWord, '***', $inputText);
   $parsedTextLength = strlen($parsedText);
 ?>
 

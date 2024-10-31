@@ -20,11 +20,11 @@
           <div class="input-wrapper">
             <label for="parsed-text" class="input-text">
               Insert here your text:
-              <textarea name="input_text" id="input-text" name="censored_words"></textarea>
+              <textarea name="input_text" id="input-text"></textarea>
             </label>
             <label class="censored-box">
               Insert the words you want to remove separated by spaces:
-              <input type="text" id="censored" name="censored">
+              <input type="text" name="censored-word" id="censored">
             </label>
           </div>
           <div class="button-wrapper">
